@@ -1,9 +1,10 @@
-/***********************************************************************
- * Module:  Coordenada.h
- * Author:  steve
+ /***********************************************************************
+ * UFA-ESPE
+ * Nombres: Steven Pozo,Quilumbaquin Jairo
  * Modified: lunes, 31 de octubre de 2022 17:10:18
- * Purpose: Declaration of the class Coordenada
- ***********************************************************************/
+ * Purpose: estresarnos
+ * Enunciado del problema: Crear un programa para sobrecargar los operadores
+ ***********************************************************************/ 
 
 #if !defined(__SobreCargaDeDatos_Coordenada_h)
 #define __SobreCargaDeDatos_Coordenada_h
