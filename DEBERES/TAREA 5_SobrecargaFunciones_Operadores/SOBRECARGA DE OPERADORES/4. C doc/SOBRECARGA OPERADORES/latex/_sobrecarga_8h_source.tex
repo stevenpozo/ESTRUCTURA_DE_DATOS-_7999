@@ -1,0 +1,45 @@
+\hypertarget{_sobrecarga_8h_source}{}\doxysection{Sobrecarga.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***********************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{ * UFA-\/ESPE}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Nombres: Steven Pozo,Quilumbaquin Jairo}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Fecha de creación: lunes, 31 de octubre de 2022 16:53:36}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Purpose: estresarnos}}
+\DoxyCodeLine{6 \textcolor{comment}{ * Enunciado del problema: Sobrecarga de operadores (\&\&,||)}}
+\DoxyCodeLine{7 \textcolor{comment}{ ***********************************************************************/} }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#if !defined(\_\_SobreCargaDeDatos\_Coordenada\_h)}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define \_\_SobreCargaDeDatos\_Sobrecarga\_h}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_sobrecarga}{Sobrecarga}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15  }
+\DoxyCodeLine{16    \mbox{\hyperlink{class_sobrecarga}{Sobrecarga}} operator \&\&(\textcolor{keyword}{const} \mbox{\hyperlink{class_sobrecarga}{Sobrecarga}} \&m) \textcolor{keyword}{const};}
+\DoxyCodeLine{17    \textcolor{keywordtype}{double} getX(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{18    \textcolor{keywordtype}{void} setX(\textcolor{keywordtype}{double} newX);}
+\DoxyCodeLine{19    \textcolor{keywordtype}{double} getY(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{20    \textcolor{keywordtype}{void} setY(\textcolor{keywordtype}{double} newY);}
+\DoxyCodeLine{21    \textcolor{keywordtype}{double} getA(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{22    \textcolor{keywordtype}{void} setA(\textcolor{keywordtype}{double} newA);}
+\DoxyCodeLine{23    \textcolor{keywordtype}{double} getB(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{24    \textcolor{keywordtype}{void} setB(\textcolor{keywordtype}{double} newB);}
+\DoxyCodeLine{25    }
+\DoxyCodeLine{26    \mbox{\hyperlink{class_sobrecarga}{Sobrecarga}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} x, \textcolor{keyword}{const} \textcolor{keywordtype}{double} y, \textcolor{keyword}{const} \textcolor{keywordtype}{double} a, \textcolor{keyword}{const} \textcolor{keywordtype}{double} b);}
+\DoxyCodeLine{27    \textcolor{keywordtype}{double} ingresaDoubles(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{28    \mbox{\hyperlink{class_sobrecarga}{Sobrecarga}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{31 \textcolor{keyword}{private}:}
+\DoxyCodeLine{32    \textcolor{keywordtype}{double} x;}
+\DoxyCodeLine{33    \textcolor{keywordtype}{double} y;}
+\DoxyCodeLine{34    \textcolor{keywordtype}{double} a;}
+\DoxyCodeLine{35    \textcolor{keywordtype}{double} b;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
