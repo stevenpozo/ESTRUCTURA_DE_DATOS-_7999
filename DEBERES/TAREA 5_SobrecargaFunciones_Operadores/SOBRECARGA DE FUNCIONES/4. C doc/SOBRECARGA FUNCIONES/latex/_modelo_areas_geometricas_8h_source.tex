@@ -1,0 +1,31 @@
+\hypertarget{_modelo_areas_geometricas_8h_source}{}\doxysection{Modelo\+Areas\+Geometricas.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/***********************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{ * UFA-\/ESPE}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Nombres: Steven Pozo,Quilumbaquin Jairo}}
+\DoxyCodeLine{4 \textcolor{comment}{ * Fecha de creacion: miércoles, 7 de noviembre de 2022 16:06:30}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Purpose: Implementation of the class Areas}}
+\DoxyCodeLine{6 \textcolor{comment}{ * Enunciado del problema: Calcular el área de algunas figuras geometricas con el con funciones sobrecargadas.}}
+\DoxyCodeLine{7 \textcolor{comment}{ ***********************************************************************/}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#if !defined(\_\_AreaFiguras\_ModeloAreasGeometricas\_h)}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define \_\_AreaFiguras\_ModeloAreasGeometricas\_h}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_modelo_areas_geometricas}{ModeloAreasGeometricas}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15    \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} calcularArea(\textcolor{keywordtype}{double} variableA, \textcolor{keywordtype}{int} seleccion)=0;}
+\DoxyCodeLine{16    \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} calcularArea(\textcolor{keywordtype}{double} variableA, \textcolor{keywordtype}{double} variableB, \textcolor{keywordtype}{int} seleccion)=0;}
+\DoxyCodeLine{17    \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} calcularArea(\textcolor{keywordtype}{double} variableA, \textcolor{keywordtype}{double} variableB, \textcolor{keywordtype}{double} variableC)=0;}
+\DoxyCodeLine{18    \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} ingresarEnteros(\textcolor{keywordtype}{void})=0;}
+\DoxyCodeLine{19    \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} ingresaDoubles(\textcolor{keywordtype}{void})=0;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \};}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
