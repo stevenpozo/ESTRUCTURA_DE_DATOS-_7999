@@ -92,3 +92,10 @@ void generatePayDatesMontly(int nCuotas,int pos){
 	
 		
 }
+
+void ComprobarDiasFestivos(){
+	
+	int feriados[11][11][11]={{1},{2},{3}};
+	
+	cout<<"que hay aqui"<<feriados[0][0][0]<<endl;
+}
