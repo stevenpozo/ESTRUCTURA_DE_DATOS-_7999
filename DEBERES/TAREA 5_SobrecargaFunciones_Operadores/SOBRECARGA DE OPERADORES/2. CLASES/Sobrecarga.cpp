@@ -1,9 +1,9 @@
 /***********************************************************************
  * UFA-ESPE
  * Nombres: Steven Pozo,Quilumbaquin Jairo
- * Fecha de creación: lunes, 31 de octubre de 2022 16:53:36
+ * Fecha de creación: lunes, 7 de noviembre de 2022 16:53:36
  * Purpose: estresarnos
- * Enunciado del problema: Sobrecarga de operadores (&&,||)
+ * Enunciado del problema: Sobrecarga de operadores
  ***********************************************************************/ 
 
 #include "Sobrecarga.h"
