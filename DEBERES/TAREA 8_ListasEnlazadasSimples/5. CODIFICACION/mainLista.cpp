@@ -1,4 +1,10 @@
-
+/***********************************************************************
+ * UFA-ESPE
+ * Nombres: Steven Pozo,Quilumbaquin Jairo
+ * Fecha de creacion: jueves, 17 de noviembre de 2022 17:06:30
+ * Purpose: Implementation of simple list
+ * Enunciado del problema: Lista enlazada simple, insertar,modificar,buscar,eliminar
+ ***********************************************************************/
 #include <iostream>
 #include <stdlib.h>
 #include "ListaEnlazadaS.cpp"
