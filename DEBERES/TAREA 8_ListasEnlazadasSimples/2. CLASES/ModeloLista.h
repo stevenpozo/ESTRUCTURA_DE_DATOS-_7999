@@ -1,8 +1,9 @@
 /***********************************************************************
- * Module:  ModeloLista.h
- * Author:  steve
- * Modified: jueves, 17 de noviembre de 2022 20:45:29
- * Purpose: Declaration of the class ModeloLista
+ * UFA-ESPE
+ * Nombres: Steven Pozo,Quilumbaquin Jairo
+ * Fecha de creacion: jueves, 17 de noviembre de 2022 17:06:30
+ * Purpose: Implementation of simple list
+ * Enunciado del problema: Lista enlazada simple, insertar,modificar,buscar,eliminar
  ***********************************************************************/
 
 #if !defined(__ListaSimple_ModeloLista_h)

@@ -1,8 +1,9 @@
 /***********************************************************************
- * Module:  ListaEnlazadaS.h
- * Author:  steve
- * Modified: jueves, 17 de noviembre de 2022 20:49:47
- * Purpose: Declaration of the class ListaEnlazadaS
+ * UFA-ESPE
+ * Nombres: Steven Pozo,Quilumbaquin Jairo
+ * Fecha de creacion: jueves, 17 de noviembre de 2022 17:06:30
+ * Purpose: Implementation of simple list
+ * Enunciado del problema: Lista enlazada simple, insertar,modificar,buscar,eliminar
  ***********************************************************************/
 
 #if !defined(__ListaSimple_ListaEnlazadaS_h)

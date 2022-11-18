@@ -1,8 +1,9 @@
 /***********************************************************************
- * Module:  Nodo.cpp
- * Author:  steve
- * Modified: jueves, 17 de noviembre de 2022 20:49:47
- * Purpose: Implementation of the class Nodo
+ * UFA-ESPE
+ * Nombres: Steven Pozo,Quilumbaquin Jairo
+ * Fecha de creacion: jueves, 17 de noviembre de 2022 17:06:30
+ * Purpose: Implementation of simple list
+ * Enunciado del problema: Lista enlazada simple, insertar,modificar,buscar,eliminar
  ***********************************************************************/
 
 #include "Nodo.h"
