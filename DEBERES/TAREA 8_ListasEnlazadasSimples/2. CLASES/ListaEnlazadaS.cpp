@@ -35,23 +35,12 @@ void ListaEnlazadaS::insertarLista(int dato){
 	Nodo *nodo = new Nodo(dato);
    if (this -> start == NULL) {
         this -> start = nodo;
-        //this -> end = nodo;
     } else {
         this -> end->setNext(nodo);
         
     }
 	   this -> end = nodo; 
 	   
-	   
-/*	   
-	   if (this -> start == NULL) {
-         this -> end = nodo;
-         this -> end->setNext(nodo);
-    } else {
-        this -> start->setNext(nodo);
-        
-    }
-	   this -> end = nodo; */
    	
 }
 void ListaEnlazadaS::mostarLista(){
@@ -109,10 +98,10 @@ void ListaEnlazadaS::buscarLista(int dato){
 	}
     while (aux) {
         if (aux->getDato() == dato) {
-            cout << "Dato encontrado: " << dato<< endl;
+            cout << "\nDato encontrado: " << dato<< endl;
             break;
         } else {
-        	cout << "Dato no encontrado: "<< endl;
+        	cout << "\nDato no encontrado: "<< endl;
             break;
 		}
         aux = aux->getNext();
