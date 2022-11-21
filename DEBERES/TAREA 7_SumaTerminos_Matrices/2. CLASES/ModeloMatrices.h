@@ -11,7 +11,6 @@
 class ModeloMatrices
 {
 public:
-   virtual int** sumaMatriz(int **vect1,int **vect2,int filas, int columnas)=0;
    virtual int** multiplicar(int **vect1,int **vect2,int filas, int columnas)=0;
    virtual void encerar(int **,int)=0;
    virtual void limpiarMatriz(int **, int )=0;

@@ -13,6 +13,8 @@
 class Matriz : public ModeloMatrices
 {
 public:
+	
+	int **vect3;
    int getFilas(void);
    void setFilas(int newFilas);
    int getColumnas(void);
@@ -23,7 +25,6 @@ public:
    
    Matriz();
    ~Matriz();
-   int** sumaMatriz(int **vect1,int **vect2,int filas, int columnas) override;
    int** multiplicar(int **vect1,int **vect2,int filas, int columnas) override;
    void encerar(int **,int) override;
    void limpiarMatriz(int **, int ) override;
@@ -32,6 +33,7 @@ public:
    void ingresarDatosMatriz(int **,int) override;
    int ingresarEnteros(void) override;
    void pedirTamanioMatriz(void) override;
+   Matriz multiplicar2(int **vect1, int **vect2, int filas, int columnas);
 
 protected:
 private:

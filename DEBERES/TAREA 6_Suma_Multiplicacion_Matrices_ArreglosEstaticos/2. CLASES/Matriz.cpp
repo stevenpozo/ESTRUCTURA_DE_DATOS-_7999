@@ -68,6 +68,7 @@ void Matriz::sumaMatriz(int vect1[][TAM],int vect[][TAM],int filas, int columnas
 	}
 	imprimir(vect3,getFilas(),getColumnas());
 }
+
 void Matriz::multMatriz(int vect1[][TAM],int vect[][TAM],int filas, int columnas){
 	int vect3[TAM][TAM];
     

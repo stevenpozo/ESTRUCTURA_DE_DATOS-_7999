@@ -57,21 +57,6 @@ void Matriz::setColumnas(int newColumnas)
    columnas = newColumnas;
 }
 
-
-int** Matriz::sumaMatriz(int **vect1,int **vect2,int filas, int columnas){
-    
-    int **vect3;
-    vect3=crearMatriz(filas,columnas);
-     
-    for(int i=0;i<filas;i++){
-		for(int j=0;j<columnas;j++){
-			
-			*(*(vect3+i)+j)=*(*(vect1+i)+j)+*(*(vect2+i)+j);
-		}
-	}
-	
-    return vect3;
- }
  
 int** Matriz::multiplicar(int **vect1, int **vect2, int filas, int columnas){
    	
@@ -181,13 +166,13 @@ int Matriz::ingresarEnteros() {
 	return numero;
 }
 
+
 void Matriz::pedirTamanioMatriz(void){
 
 	int filas,columnas, opcion;
 	
 	do{
-		cout<<"------------------SUMA Y MULTIPLICACION DE MATRICES---------------"<<endl;
-		cout<<"1. Suma Matrices"<<endl;
+		cout<<"-----------------POTENCIA DE UNA MATRIZ---------------"<<endl;
 		cout<<"2. Matrices de matrices "<<endl;
 		opcion=ingresarEnteros();
 		if(opcion>2 || opcion<1 ){
@@ -199,8 +184,7 @@ void Matriz::pedirTamanioMatriz(void){
 		setOpcion(opcion);
 	
 	do{
-		cout<<"\t\tMatrices cuadradas"<<endl;
-		cout<<"TAMANIO DE MATRIZ A Y B"<<endl;
+		cout<<"\t\t Ingrese el tamaño de la matriz"<<endl;
 		cout<<"Numero de filas: ";
 		filas=ingresarEnteros();
 		cout<<"\nNumero de columnas: ";
@@ -210,22 +194,37 @@ void Matriz::pedirTamanioMatriz(void){
 			system("CLS");
 		}
 		if( columnas!=filas){
-			cout<<"LAS FILAS Y COLUMNAS DE LAS MATRICES NO CORRESPONDEN A UNA CUADRATICA"<<endl;
-			cout<<"ingrese nuevamente"<<endl;
+			cout<<"El numero de columnas y filas debe ser igual"<<endl;
+			cout<<"Ingrese nuevamente porfavor....."<<endl;
 			system("PAUSE");
 			system("CLS");
 		}
 	}while(columnas<0 || filas<0 || columnas!=filas );
+	
 		setFilas(filas);
 		setColumnas(columnas);
 		
 }
 
-
-
-
-
-
+Matriz Matriz::multiplicar2(int **vect1, int **vect2, int filas, int columnas){
+   	
+   	Matriz mat;
+   	mat.
+  	int **vect3;
+    vect3=crearMatriz(filas,columnas);
+     
+    for(int i=0;i<filas;i++){
+		for(int j=0;j<columnas;j++){
+			*(*(vect3+i)+j)=0;
+			for (int k=0;k<filas;k++){
+				*(*(vect3+i)+j)+=*(*(vect1+i)+k)**(*(vect2+k)+j);	
+			}
+		}
+	}
+	
+    return mat;
+    
+}
 
 
 
