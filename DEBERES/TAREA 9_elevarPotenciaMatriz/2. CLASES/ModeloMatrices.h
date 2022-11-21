@@ -1,8 +1,10 @@
 /***********************************************************************
+ * Universidad de las fuerzas Armadas ESPE
+ * ESTRUCTURA DE DATOS
  * Module:  ModeloMatrices.h
- * Author:  steve
- * Modified: miércoles, 9 de noviembre de 2022 15:35:07
- * Purpose: Declaration of the class ModeloMatrices
+ * Author:  Steven Pozo. Jairo Quilumbaquin
+ * Modified: miércoles, 20 de noviembre de 2022 15:35:07
+ * Purpose: Elevar a n potencia una matriz 
  ***********************************************************************/
 
 #if !defined(__arreglosEstaticos_ModeloMatrices_h)

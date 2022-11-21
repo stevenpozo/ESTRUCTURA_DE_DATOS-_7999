@@ -1,4 +1,12 @@
-
+/***********************************************************************
+ * Universidad de las fuerzas Armadas ESPE
+ * ESTRUCTURA DE DATOS
+ * Module:  ModeloMatrices.h
+ * Author:  Steven Pozo. Jairo Quilumbaquin
+ * Modified: miércoles, 20 de noviembre de 2022 15:35:07
+ * Purpose: Elevar a n potencia una matriz 
+ ***********************************************************************/
+ 
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
