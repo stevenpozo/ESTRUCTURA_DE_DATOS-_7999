@@ -1,0 +1,19 @@
+Start testing: Nov 30 02:37 Hora est. Pacífico, Sudamérica
+----------------------------------------------------------
+Unable to find executable: runUnitTests
+1/1 Testing: UnitTests
+1/1 Test: UnitTests
+Command: ""
+Directory: C:/Users/luis1/Documents/EDD-Burbano-Condor-7999/PROYECTOS/1er Parcial/UnitTest/build
+"UnitTests" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"UnitTests" end time: Nov 30 02:37 Hora est. Pacífico, Sudamérica
+"UnitTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 30 02:37 Hora est. Pacífico, Sudamérica

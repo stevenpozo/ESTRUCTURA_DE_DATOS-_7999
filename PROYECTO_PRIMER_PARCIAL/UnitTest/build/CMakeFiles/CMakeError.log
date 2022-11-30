@@ -1,0 +1,57 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/luis1/Documents/EDD-Burbano-Condor-7999/PROYECTOS/1er Parcial/UnitTest/build/CMakeFiles/CMakeScratch/TryCompile-mezdsh
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ecfdc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.33.31630 para x64
+  src.c
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ecfdc.dir\Debug\\" /Fd"cmTC_ecfdc.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-mezdsh\src.c"
+C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-mezdsh\src.c(1,10): fatal  error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-mezdsh\cmTC_ecfdc.vcxproj]
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/luis1/Documents/EDD-Burbano-Condor-7999/PROYECTOS/1er Parcial/UnitTest/build/CMakeFiles/CMakeScratch/TryCompile-h3dljw
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8d43b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.33.31630 para x64
+  CheckFunctionExists.c
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8d43b.dir\Debug\\" /Fd"cmTC_8d43b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-h3dljw\CheckFunctionExists.c"
+LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-h3dljw\cmTC_8d43b.vcxproj]
+
+
+
+Determining if the function pthread_create exists in the pthread failed with the following output:
+Change Dir: C:/Users/luis1/Documents/EDD-Burbano-Condor-7999/PROYECTOS/1er Parcial/UnitTest/build/CMakeFiles/CMakeScratch/TryCompile-pk1o08
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_b410b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.33.31630 para x64
+  CheckFunctionExists.c
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b410b.dir\Debug\\" /Fd"cmTC_b410b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-pk1o08\CheckFunctionExists.c"
+LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [C:\Users\luis1\Documents\EDD-Burbano-Condor-7999\PROYECTOS\1er Parcial\UnitTest\build\CMakeFiles\CMakeScratch\TryCompile-pk1o08\cmTC_b410b.vcxproj]
+
+
+
