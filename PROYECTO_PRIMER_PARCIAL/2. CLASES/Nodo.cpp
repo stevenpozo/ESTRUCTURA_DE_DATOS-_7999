@@ -1,66 +1,53 @@
 /***********************************************************************
- * Module:  Nodo.cpp
- * Author:  ColegioM
- * Modified: martes, 22 de noviembre de 2022 18:23:12
- * Purpose: Implementation of the class Nodo
+ * Module:  ModeloLCDE.h
+ * Author:  Steven Pozo, Jairo Quilumbaquin
+ * Modified: jueves, 24 de noviembre de 2022 13:16:00
+ * Purpose: Lista circular doblemente enlazada
  ***********************************************************************/
 
 #include "Nodo.h"
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Nodo::getSiguiente()
-// Purpose:    Implementation of Nodo::getSiguiente()
-// Return:     Nodo*
-////////////////////////////////////////////////////////////////////////
+#include <cstddef>
 
 Nodo* Nodo::getSiguiente(void)
 {
    return siguiente;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Nodo::setSiguiente(Nodo* newSiguiente)
-// Purpose:    Implementation of Nodo::setSiguiente()
-// Parameters:
-// - newSiguiente
-// Return:     void
-////////////////////////////////////////////////////////////////////////
-
 void Nodo::setSiguiente(Nodo* newSiguiente)
 {
    siguiente = newSiguiente;
 }
-
-////////////////////////////////////////////////////////////////////////
-// Name:       Nodo::getAnterior()
-// Purpose:    Implementation of Nodo::getAnterior()
-// Return:     Nodo*
-////////////////////////////////////////////////////////////////////////
 
 Nodo* Nodo::getAnterior(void)
 {
    return anterior;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Nodo::setAnterior(Nodo* newAnterior)
-// Purpose:    Implementation of Nodo::setAnterior()
-// Parameters:
-// - newAnterior
-// Return:     void
-////////////////////////////////////////////////////////////////////////
-
 void Nodo::setAnterior(Nodo* newAnterior)
 {
    anterior = newAnterior;
 }
 
-////////////////////////////////////////////////////////////////////////
-// Name:       Nodo::Nodo()
-// Purpose:    Implementation of Nodo::Nodo()
-// Return:     
-////////////////////////////////////////////////////////////////////////
+
+Empleado Nodo::getDato(void)
+{
+   return dato;
+}
+
+void Nodo::setDato(Empleado newDato)
+{
+   dato = newDato;
+}
+
+Nodo::Nodo(Empleado dato1)
+{
+	dato=dato1;
+	siguiente=anterior=NULL;
+	
+}
+
 
 Nodo::Nodo()
 {
 }
+
